@@ -27,4 +27,27 @@ describe("Test for Fizzbuzz", () => {
         expect(explorer3.trick).toBe("FIZZBUZZ");
     });
 
+    test("5- trick score con numbers", () => {
+       
+      const numberTrick =  FizzbuzzService.applyValidationInNumber(15);
+        expect(numberTrick).toBe("FIZZBUZZ");
+    });
+
+    test("6- trick score con numbers", () => {
+       
+        const numberTrick =  FizzbuzzService.applyValidationInNumber(5);
+          expect(numberTrick).toBe("BUZZ");
+      });
+      test("7- trick score con numbers", () => {
+       
+        const numberTrick =  FizzbuzzService.applyValidationInNumber(3);
+          expect(numberTrick).toBe("FIZZ");
+      });
+      test("8- trick score con numbers", () => {
+       
+        const numberTrick =  FizzbuzzService.applyValidationInNumber(1);
+          expect(numberTrick).toBe(1);
+      });
+
+
 });

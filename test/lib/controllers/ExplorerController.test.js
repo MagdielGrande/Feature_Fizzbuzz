@@ -18,4 +18,10 @@ describe("Test for ExplorerController", () => {
         const num_by_mission = ExplorerController.getExplorersAmonutByMission("node");
         expect(num_by_mission).toBe(10);
     });
+
+    test("4. obtener el trick dependiendo del score", () => {
+        
+        const trickScore = ExplorerController.getTrickScore(6);
+        expect(trickScore).toBe("FIZZ");
+    });
 });
